@@ -1,7 +1,9 @@
 # %%
 
+print('Initiating...')
+
 import pandas as pd
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import time
 import pickle
 from pytrends.request import TrendReq
@@ -47,7 +49,7 @@ class Trend:
         return date_start + ' ' + date_end
 
     def scrape(self):
-        pytrend.build_payload(self.kwList, timeframe=self.timeframe())
+        pytrend.build_payload(self.kwList, timeframe=self.timeframe(), geo='US')
         self.trend = (pytrend.interest_by_region()).reset_index()
 
     def toPickle(self, keyword, path):
@@ -86,13 +88,14 @@ class Trend:
         plt.legend()
         plt.show()
 
+print('Prep work done!')
 
 # %%
 
 def main():
-    kw_list = ['"Canon" "mirrorless"', '"Nikon" "mirrorless"', '"Sony" "mirrorless"']
-    # kw_list = ['%2Fm%2F01xw9', '%2Fm%2F051zk',
-    #            '%2Fm%2F09y2k2', '%2Fm%2F07hxn', '%2Fm%2F01h5q0']
+    # kw_list = ['"Canon" "mirrorless"', '"Nikon" "mirrorless"', '"Sony" "mirrorless"']
+    kw_list = ["%2Fm%2F01xw9", "%2Fm%2F051zk", "%2Fm%2F09y2k2", "%2Fm%2F07hxn", "%2Fm%2F01h5q0"]
+    # kw_list = ['chinese cuisine', 'mexican cuisine']
 
     for y in range(2020, 2021):
         for m in range(1, 13):
@@ -100,17 +103,26 @@ def main():
                 break
             while True:
                 try:
+                    print('Starting to scrap: ' + str(y) + '-' + str(m))
                     t = Trend(y, m, kw_list)
                     t.scrape()
-                    t.toPickle('testing', 'data/raw/test')
+                    print('Previewing data: ' + str(y) + '-' + str(m))
+                    t.preview()
+                    t.toPickle('cuisine', 'data/raw/')
                     t.scatter()
-                    print(str(y) + '-' + str(m) + ': DONE')
+                    print('Just finished scraping: ' + str(y) + '-' + str(m))
                     time.sleep(0.1)  # in seconds
                     break
                 except:
-                    print("Error caught. Going to pause for some duration...")
-                    time.sleep(3)
+                    t_pause = 30
+                    print('Error caught. Going to pause for ' + t_pause + 'seconds and retry scraping' + str(y) + '-' + str(m))
+                    time.sleep(t_pause)
+    print('All data scraping is finished!')
 
 if __name__ == '__main__':
-    print('Start!')
+    print('Starting main()!')
     main()
+
+
+
+# %%
