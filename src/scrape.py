@@ -95,10 +95,10 @@ print('Prep work done!')
 
 def main():
     # kw_list = ['"Canon" "mirrorless"', '"Nikon" "mirrorless"', '"Sony" "mirrorless"']
-    # kw_list = ["%2Fm%2F01xw9", "%2Fm%2F051zk", "%2Fm%2F09y2k2", "%2Fm%2F07hxn", "%2Fm%2F01h5q0"]
-    kw_list = ['chinese cuisine', 'mexican cuisine', '%2Fm%2F01xw9']
+    kw_list = ["/m/01xw9", "/m/051zk", "/m/09y2k2", "/m/07hxn", "/m/01h5q0"]
+    # kw_list = ['chinese cuisine', 'mexican cuisine', '/m/01xw9']
 
-    for y in range(2020, 2021):
+    for y in range(2004, 2021):
         for m in range(1, 13):
             if (y == 2020 and m > 3):
                 break
@@ -109,7 +109,7 @@ def main():
                     t.scrape()
                     print('Previewing data: ' + str(y) + '-' + str(m))
                     t.preview()
-                    # t.toPickle('cuisine', 'data/raw/')
+                    t.toPickle('cuisine', 'data/raw/')
                     t.scatter()
                     print('Just finished scraping: ' + str(y) + '-' + str(m))
                     time.sleep(0.1)  # in seconds
