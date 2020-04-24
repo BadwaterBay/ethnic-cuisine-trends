@@ -2,6 +2,7 @@
 
 Founding team members:
 Aaron Tang (@tangaw) and Skyler Dong (@dongskyler) (equal partners)
+
 Date created: April 16, 2020
 
 ## Our motivations
