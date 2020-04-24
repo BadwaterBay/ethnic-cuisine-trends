@@ -25,8 +25,10 @@ to answer our question.
 Our final product is shown here:
 https://app.skylerdong.com/camera-search-trends/
 
-## Final words
-This is a work in progress. 
-
+## Contributing to this project
 If you are interested in contributing to this project, you are welcome
 to reach out.
+
+To contribute to this project, we follow a rather standard approach of
+open-source software development, such as:
+https://github.com/firstcontributions/first-contributions
