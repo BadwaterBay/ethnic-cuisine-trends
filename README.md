@@ -1,4 +1,9 @@
-# ProjectFortuneCookie
+# Ethnic Cuisine Trends
+*https://github.com/dongskyler/ethnic-cuisine-trends*
+
+[![Code Inspector Rating Badge](https://www.code-inspector.com/project/7048/status/svg)](https://frontend.code-inspector.com/public/project/7048/ethnic-cuisine-trends/dashboard)
+[![Code Inspector Score Badge](https://www.code-inspector.com/project/7048/score/svg)](https://frontend.code-inspector.com/public/project/7048/ethnic-cuisine-trends/dashboard)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/343e1c85bb9442768fe6be41e42cb8a6)](https://www.codacy.com/manual/dongskyler/ethnic-cuisine-trends?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dongskyler/ethnic-cuisine-trends&amp;utm_campaign=Badge_Grade)
 
 Founding team members:
 Aaron Tang (@tangaw) and Skyler Dong (@dongskyler) (equal partners)
