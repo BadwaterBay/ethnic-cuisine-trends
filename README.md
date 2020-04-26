@@ -1,4 +1,5 @@
 # Ethnic Cuisine Trends
+
 *https://github.com/dongskyler/ethnic-cuisine-trends*
 
 [![Code Inspector Rating Badge](https://www.code-inspector.com/project/7048/status/svg)](https://frontend.code-inspector.com/public/project/7048/ethnic-cuisine-trends/dashboard)
