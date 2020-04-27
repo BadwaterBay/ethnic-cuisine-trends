@@ -2,7 +2,7 @@
 
 [https://github.com/dongskyler/ethnic-cuisine-trends](https://github.com/dongskyler/ethnic-cuisine-trends)
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/343e1c85bb9442768fe6be41e42cb8a6)](https://www.codacy.com/manual/dongskyler/ethnic-cuisine-trends?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dongskyler/ethnic-cuisine-trends&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d34a95ea932a4bf9b6d6d551228e45d7)](https://www.codacy.com/gh/Badwater-Apps/ethnic-cuisine-trends?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Badwater-Apps/ethnic-cuisine-trends&amp;utm_campaign=Badge_Grade)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Founding team members:
