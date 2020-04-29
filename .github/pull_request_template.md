@@ -1,29 +1,15 @@
----
-**IMPORTANT: Please don't create a Pull Request before creating an issue first**
+# Fixes #000.  (<=== Add issue number here)
 
-name: ''
-about: What is this Pull Request about?
-title: Please also includes "Closes #XXX: " at the beginning of the title
-labels: ''
-reference: This Pull request closes #XXX
+*IMPORTANT:* Please don't create a Pull Request (PR) before creating an issue first.
 
----
+Make sure these boxes are checked before your Pull Request is ready to be reviewed and merged. Thanks!
 
-**Closing issues**
+- [ ] PR is descriptively titled 📑 and links the original issue above 🔗
+- [ ] Tests pass -- look for a green checkbox ✔️ a few minutes after opening your PR
+- [ ] Code is in uniquely-named feature branch and has no merge conflicts 📁
+- [ ] Screenshots/GIFs are attached 📎 in case of UI updates
+- [ ] @mentions of the person or team responsible for reviewing proposed changes, if such.
 
-Please provide enough information so your teammates can review your pull request:
+> We're happy to help you get this ready. Don't be afraid to ask for help, and **don't be discouraged** if your tests fail at first!
 
-<!-- You can skip this if you're fixing a typo to the project. -->
-
-Explain the **details** for making this change. What existing problem does the pull request solve?
-
-<!-- Example: When "Adding a function to do X", explain why it is necessary to have a way to do X. -->
-
-**Test plan (if applicable)**
-
-<!-- Demonstrate the code is solid. Example: The exact commands you ran and their output, screenshots or videos if the pull request changes UI. -->
-
-**Additional info (if applicable)**
-@mentions of the person or team responsible for reviewing proposed changes, if such.
-
-Thank you for contributing to this project.
+Thank you for contributing to this project!
