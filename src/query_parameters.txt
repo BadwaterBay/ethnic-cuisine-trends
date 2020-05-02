@@ -1,11 +1,11 @@
 e.g. Chinese cuisine and Mexican cuisine:
-q=%2Fm%2F01xw9,%2Fm%2F051zk
+q=/m/01xw9,/m/051zk
 
-Chinese cuisine: %2Fm%2F01xw9
-Mexican cuisine: %2Fm%2F051zk
-Italian cuisine: %2Fm%2F09y2k2
-Thai cuisine: %2Fm%2F07hxn
-Indian cuisine: %2Fm%2F01h5q0
+"Chinese cuisine": "/m/01xw9"
+"Mexican cuisine": "/m/051zk"
+"Italian cuisine": "/m/09y2k2"
+"Thai cuisine": "/m/07hxn"
+"Indian cuisine": "/m/01h5q0"
 
 
 Reference:

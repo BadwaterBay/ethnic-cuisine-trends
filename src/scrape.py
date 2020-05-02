@@ -49,9 +49,12 @@ class Trend:
             "-" + str(self.monthEndDate())
         return date_start + ' ' + date_end
 
-    def scrape(self):
+    def scrape(self, toPlain={}):
         pytrend.build_payload(self.kwList, timeframe=self.timeframe(), geo='US')
-        self.trend = (pytrend.interest_by_region(resolution='REGION')).reset_index()
+        results = (pytrend.interest_by_region(resolution='REGION')).reset_index()
+        if toPlain:
+            results = results.rename(columns=toPlain)
+        self.trend = results
 
     def toPickle(self, keyword, path):
         keyword = keyword.replace(' ', '-')
@@ -96,6 +99,11 @@ print('Prep work done!')
 def main():
     # kw_list = ['"Canon" "mirrorless"', '"Nikon" "mirrorless"', '"Sony" "mirrorless"']
     kw_list = ["/m/01xw9", "/m/051zk", "/m/09y2k2", "/m/07hxn", "/m/01h5q0"]
+    col_convert = {"/m/01xw9": "Chinese cuisine",
+                   "/m/051zk": "Mexican cuisine",
+                   "/m/09y2k2": "Italian cuisine",
+                   "/m/07hxn": "Thai cuisine",
+                   "/m/01h5q0": "Indian cuisine"}
     # kw_list = ['chinese cuisine', 'mexican cuisine', '/m/01xw9']
 
     for y in range(2004, 2021):
@@ -106,17 +114,17 @@ def main():
                 try:
                     print('Starting to scrap: ' + str(y) + '-' + str(m))
                     t = Trend(y, m, kw_list)
-                    t.scrape()
+                    t.scrape(toPlain=col_convert)
                     print('Previewing data: ' + str(y) + '-' + str(m))
                     t.preview()
-                    t.toPickle('cuisine', 'data/raw/')
+                    t.toPickle('cuisine', './data/raw')
                     t.scatter()
                     print('Just finished scraping: ' + str(y) + '-' + str(m))
                     time.sleep(0.1)  # in seconds
                     break
                 except:
                     t_pause = 30
-                    print('Error caught. Going to pause for ' + t_pause + 'seconds and retry scraping' + str(y) + '-' + str(m))
+                    print('Error caught. Going to pause for ' + str(t_pause) + 'seconds and retry scraping ' + str(y) + '-' + str(m))
                     time.sleep(t_pause)
 
 if __name__ == '__main__':
