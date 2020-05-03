@@ -40,6 +40,8 @@ open-source software development, such as:
 
 ## Contributors
 
-[Aaron Tang](https://github.com/tangaw), [Skyler Dong](https://github.com/dongskyler), and [Hayley Hui](https://github.com/Hayleylhui)
+[https://github.com/Badwater-Apps/ethnic-cuisine-trends/graphs/contributors](https://github.com/Badwater-Apps/ethnic-cuisine-trends/graphs/contributors)
 
-Date created: April 16, 2020
+## Date created
+
+April 16, 2020
