@@ -1,5 +1,5 @@
 # %%
-# hayleydummy
+
 print('Initiating...')
 
 import pandas as pd
@@ -131,6 +131,5 @@ if __name__ == '__main__':
     print('Starting main()!')
     main()
     print('All data scraping is finished!')
-
 
 # %%

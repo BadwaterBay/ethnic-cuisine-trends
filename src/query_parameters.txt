@@ -7,6 +7,5 @@ q=/m/01xw9,/m/051zk
 "Thai cuisine": "/m/07hxn"
 "Indian cuisine": "/m/01h5q0"
 
-
 Reference:
 https://www.chefspencil.com/most-popular-ethnic-cuisines-in-america/
